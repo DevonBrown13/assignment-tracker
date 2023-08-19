@@ -27,7 +27,7 @@ openRequest.addEventListener('success', () => {
     db = openRequest.result;
 
     aDisplayData();
-    tDisplayData();
+    // tDisplayData();
 });
 
 openRequest.addEventListener('upgradeneeded', (e) => {
