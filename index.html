@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="style/main.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+
+        <script src="scripts/main.js" defer></script>
+
+        <title>Assignment Tracker</title>
+    </head>
+    <body>
+        <div id="page-top">
+            <h1>Assignment Tracker</h1>
+        </div>
+
+        <div id="page-main">
+            <div id="a-display">
+                <h2 class="padded-x2">Assignments</h2>
+                <ul id="a-list"></ul>
+            </div>
+        </div>
+
+        <div id="page-right">
+            <div id="a-add">
+                <h2 class="padded">Add a new assignment</h2>
+                <form id="a-form">
+                    <div class="padded">
+                        <label for="a-name">Assignment name:</label>
+                        <input id="a-name" type="text" maxlength="30" autocomplete="off" required />
+                    </div>
+                    <div class="padded">
+                        <label for="a-due-date">Due date:</label>
+                        <input id="a-due-date" type="date" required />
+                    </div>
+                    <div class="padded">
+                        <label for="a-info">(Optional) Assignment info:</label>
+                        <input id="a-info" type="text" autocomplete="off" />
+                    </div>
+                    <div class="padded">
+                        <button class="submit-btn" id="a-submit-btn">Create</button>
+                    </div>
+                </form>
+            </div>
+            <div id="t-add">
+                <div class="padded" id="beta-container">
+                    <h2 class="padded">Add a new tag</h2>
+                    <span class="beta-label" title="This feature does not yet function properly.">Beta</span>
+                </div>
+                <form id="t-form">
+                    <div class="padded">
+                        <label for="t-name">Tag name:</label>
+                        <input id="t-name" type="text" maxlength="30" autocomplete="off" required />
+                    </div>
+                    <div class="padded">
+                        <label for="t-color">Color:</label>
+                        <input id="t-color" type="text" maxlength="30" autocomplete="off" required />
+                    </div>
+                    <div class="padded">
+                        <button class="submit-btn" id="t-submit-btn">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="page-bottom">
+            <p id="made-by">Made by Devon Brown</p>
+            <a href="mailto: 924041@lcps.org">Feedback</a>
+        </div>
+    </body>
+</html>
